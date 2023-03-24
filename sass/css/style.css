@@ -1,3 +1,25 @@
+/* Mixin */
+/* Variables */
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li a {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 5px;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+header nav ul li a:hover {
+  background-color: black;
+  color: #ccddcc;
+}
+
 /* News  : utilisation de l'imbrication*/
 #news > div {
   display: flex;
@@ -8,7 +30,7 @@
   box-sizing: border-box;
   flex-basis: calc(33% - 40px);
   padding: 20px;
-  border: 1px solid grey;
+  border: 1px solid #ccddcc;
   border-radius: 6px;
 }
 
