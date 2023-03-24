@@ -1,0 +1,19 @@
+* {
+  border: 1px solid black;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  height: 500px;
+  align-content: space-between;
+  gap: 20px;/* gouttière */
+}
+.container > div {
+  width: calc(25% - 20px);
+ 
+  box-sizing: border-box;
+  height: 150px;
+}
