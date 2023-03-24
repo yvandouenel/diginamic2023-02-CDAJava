@@ -1,0 +1,14 @@
+/* Mixin */
+@mixin button($bgcolor: $grey, $color: black) {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 5px;
+  background-color: $bgcolor;
+  color: $color;
+  text-decoration: none;
+  border-radius: 6px;
+  &:hover {
+    background-color: black;
+    color: $grey;
+  }
+}

@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/* Rédéfinition des couleur via à tableau associatif */
+@media screen and (min-width: 980px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .container .row .col-lg-4 {
+    width: calc(25% - 40px);
+  }
+}
+
+/* images */
+img {
+  max-width: 100%;
+}
+
+/* boutons */
+button.btn-ddo {
+  border: 1px solid #E74C2B !important;
+  background-color: white;
+  color: #E74C2B;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+button.btn-ddo:hover {
+  color: white;
+  background-color: #E74C2B;
+}
+
+/* bg */
+.bg-black {
+  background-color: black;
+  color: white;
+}
+
+/* padding */
+.p-1 {
+  padding: 1rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.social-ddo li {
+  margin-right: 15px;
+  /* le before correspond à une icône */
+  /* Au survol de l'icône on change de couleur */
+}
+.social-ddo li i:before {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.social-ddo li i:hover:before {
+  color: #E74C2B;
+}
+
+/* Média query classique : quand l'écran sera plus petit que 992px, on n'affiche pas les icônes des réseaux sociaux */
+@media screen and (max-width: 992px) {
+  .first-row {
+    align-items: center;
+  }
+  .social-ddo {
+    display: none;
+  }
+  #abonnement {
+    display: none;
+  }
+  .justify-content-end {
+    justify-content: center !important;
+  }
+  #top-search {
+    text-align: right;
+  }
+}
+.show {
+  position: relative;
+}
+.show .card-body {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.show .card-body > div {
+  padding-top: 150px !important;
+  background: linear-gradient(transparent, black);
+  color: white;
+  padding: 10px;
+}
+
+/* .app-btn-none {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  &:hover {
+      cursor: pointer;
+  }
+}
+
+.app-btn {
+  @extend .app-btn-none;
+  border-style: solid;
+  border-width: 1px;
+  height: 30px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  i {
+      font-size: 0.8rem;
+      font-weight: bold;
+  }
+}
+
+.app-btn-header {
+  @extend .app-btn;
+  color: map-get($theme-colors, "primary");
+  border-color: map-get($theme-colors, "primary");
+  &:hover {
+      color: white;
+      background-color: map-get($theme-colors, "primary");
+  }
+}
+
+.app-btn-nav {
+  @extend .app-btn-none;
+  i {
+      font-size: 2rem;
+  }
+  span {
+      font-size: 0.7rem;
+  }
+}
+
+.app-btn-main {
+  @extend .app-btn;
+  color: map-get($theme-colors, "primary");
+  background-color: white;
+  height: 40px;
+  border-color: map-get($theme-colors, "primary");
+  &:hover {
+      color: white;
+  }
+}
+
+.app-btn-bg-hover-black {
+  @extend .app-btn-main;
+  &:hover {
+      background-color: black;
+  }
+}
+
+.app-btn-bg-hover-primary {
+  @extend .app-btn-main;
+  &:hover {
+      background-color: map-get($theme-colors, "primary");
+  }
+}
+
+.app-btn-bg-hover-primary-all {
+  @extend .app-btn-bg-hover-primary;
+  height: 45px;
+  border-width: 2px;
+  i:before {
+      font-size: 1.2rem;;
+  }
+}
+
+.app-btn-arrow {
+  @extend .app-btn;
+  background-color: map-get($theme-colors, "primary");
+  color: white;
+  border-color: map-get($theme-colors, "primary");
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i:before {
+      font-size: 1.5rem;;
+  }
+  &:hover {
+      background-color: white;
+      color: map-get($theme-colors, "primary");
+  }
+}
+
+.app-btn-bg-primary-hover-bg-white{
+  @extend .app-btn-main;
+      background-color: map-get($theme-colors, "primary");
+      color: white;
+      border-color: map-get($theme-colors, "primary");
+  &:hover {
+      background-color: white;
+      color: map-get($theme-colors, "primary");
+  }
+} */
+
+/*# sourceMappingURL=ddo.css.map */

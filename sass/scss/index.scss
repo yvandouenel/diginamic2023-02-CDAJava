@@ -1,19 +1,9 @@
-/* Mixin */
-@mixin button($bgcolor: $grey, $color: black) {
-  border: 1px solid black;
-  margin: 10px;
-  padding: 5px;
-  background-color: $bgcolor;
-  color: $color;
-  text-decoration: none;
-  border-radius: 6px;
-  &:hover {
-    background-color: black;
-    color: $grey;
-  }
-}
-/* Variables */
-$grey: #ccddcc;
+@import './variables.scss';
+@import './mixins.scss';
+
+
+
+
 header {
   nav {
     ul {
@@ -23,7 +13,7 @@ header {
       padding: 0;
       li {
         a {
-          @include button(orange, white);
+          @include button();
         }
       }
     }

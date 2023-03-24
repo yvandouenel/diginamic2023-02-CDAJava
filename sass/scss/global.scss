@@ -1,0 +1,33 @@
+/* images */
+img {
+  max-width: 100%;
+}
+/* boutons */
+button {
+  &.btn-ddo {
+      border: 1px solid map-get($theme-colors, "primary") !important;
+      background-color: white;
+      color: map-get($theme-colors, "primary");
+      font-weight: 700;
+      text-transform: uppercase;
+      &:hover {
+          color: white;
+          background-color: map-get($theme-colors, "primary"); 
+      }
+  }
+}
+/* bg */
+.bg-black{
+  background-color: black;
+  color: white;
+}
+/* padding */
+.p-1 {
+  padding: 1rem;
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-between{
+  justify-content: space-between;
+}
