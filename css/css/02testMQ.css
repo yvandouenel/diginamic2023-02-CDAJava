@@ -1,0 +1,22 @@
+/* Par défaut = petit écran (mobile first) */
+div > div {
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 10px 0;
+}
+/* écran moyen*/
+@media screen and (min-width: 980px) {
+  div > div {
+    float: left;
+    width: calc(50% - 20px);
+    margin: 10px 10px;
+  }
+}
+/* Grand écran */
+@media screen and (min-width: 1400px) {
+  div > div {
+    float: left;
+    width: calc(25% - 20px);
+    margin: 10px 10px;
+  }
+}
